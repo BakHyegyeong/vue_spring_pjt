@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 
@@ -68,6 +70,14 @@ public class WorkController {
         
         return null;
     }
+
+    // jenkins test
+    @GetMapping("/jenkins")
+    public String debugMsg() {
+        System.out.println(">> debug Work Ctrl Get : /jenkins");
+        return "success";
+    }
+    
     
     
     
