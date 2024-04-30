@@ -23,7 +23,7 @@ jobs :
       
     # jar파일 build 및 permission
     - name : Grant jar
-      run : chmod -x gradlew
+      run : chmod +x gradlew
     - name : Build jar
       run : ./gradlew build bootJAR
       # action이 모든 step의 명령어를 갖는 것은 아니기에
