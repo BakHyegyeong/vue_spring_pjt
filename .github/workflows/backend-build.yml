@@ -44,10 +44,10 @@ jobs :
     - name : Push Image
       uses : docker/build-push-action@v2
       with :
-        #
-        context : ./vue_spring_pjt
+        # image로 만들 내용의 위치
+        context : ./
         # docker파일의 위치
-        file : ./vue_spring_pjt/Dockerfile
+        file : ./Dockerfile
         push : true
         # build될 Image의 이름
         tags : ${{ secrets.DOCKERHUB_USERNAME }}/backend-spring-pjt/${{github.sha}}
