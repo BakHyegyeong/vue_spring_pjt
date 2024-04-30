@@ -22,7 +22,7 @@ jobs :
         distribution : 'adopt'
       
     # jar파일 build 및 permission
-    - name : Grant jar
+    - name : Grant jar 
       run : chmod +x gradlew
     - name : Build jar
       run : ./gradlew build bootJAR
