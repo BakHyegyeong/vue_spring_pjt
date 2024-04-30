@@ -22,8 +22,10 @@ jobs :
         distribution : 'adopt'
       
     # jar파일 build 및 permission
+    - name : Grant jar
+      run : chmod -x gradlew
     - name : Build jar
-    run : ./gradlew build bootJAR
+      run : ./gradlew build bootJAR
       # action이 모든 step의 명령어를 갖는 것은 아니기에
       # 이렇게 직접 명령어를 지정해야할 때는 run을 사용해야 한다. 
       
