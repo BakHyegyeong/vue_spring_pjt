@@ -50,4 +50,4 @@ jobs :
         file : ./Dockerfile
         push : true
         # build될 Image의 이름
-        tags : ${{ secrets.DOCKERHUB_USERNAME }}/backend-spring-pjt/${{github.sha}}
+        tags : ${{ secrets.DOCKERHUB_USERNAME }}/backend-spring-pjt/${{github.sha}} 
